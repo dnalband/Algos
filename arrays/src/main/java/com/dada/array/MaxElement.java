@@ -1,4 +1,4 @@
-package com.dada;
+package com.dada.array;
 
 /**
  * Created by dnalband on 12/05/15.

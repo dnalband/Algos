@@ -6,9 +6,17 @@ package com.dada;
 public class Test {
 
 
-    public static void main(String[] args) {
-        System.out.println("Hello");
-        System.out.println("Again");
+        public static void main(String[] args) {
 
-    }
+            String value = "[{\"entityIdentifier\":{\"entityId\":1,\"entityType\":\"com.cisco.sdp.core.market.beans.Market\"},\"namedValueList\":[{\"name\":\"cust_id\",\"value\":\"1269\"}]},{\"entityIdentifier\":{\"entityId\":5000000,\"entityType\":\"com.cisco.sdp.core.market.beans.Market\"},\"namedValueList\":[{\"name\":\"cust_id\",\"value\":\"99\"}]}]";
+
+            String str = value.substring(
+                    value.indexOf("cust_id:",
+                            value.indexOf("entityId:" + 5000000)) + 8,
+                    value.indexOf('}',
+                            value.indexOf("entityId:" + 5000000)));
+
+            System.out.println(str);
+
+        }
 }

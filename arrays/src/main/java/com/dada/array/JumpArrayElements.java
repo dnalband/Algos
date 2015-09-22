@@ -1,4 +1,4 @@
-package com.dada;
+package com.dada.array;
 
 import java.util.Scanner;
 

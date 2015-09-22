@@ -1,6 +1,4 @@
-package com.dada;
-
-import java.lang.reflect.Array;
+package com.dada.array;
 
 /**
  * Created by dnalband on 13/05/15.
